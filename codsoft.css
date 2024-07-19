@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100h;
+    overflow-y:auto; 
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding: 0cm;
+}
+.nav-items div{
+    cursor: pointer;
+    font-size:large;
+    color: rgba(0, 0, 0, 0);
+} 
+.nav-items div:hover{
+    font-weight: bold;
+    transition: 0.8s;
+}
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem ;
+    margin: 4rem auto;
+    padding: 1rem;
+    padding-bottom: 8rem;
+}
+.faded-text{
+    user-select: none;
+    font-size: 7em;
+    color: rgba(179, 179, 20, 0.759);
+    font-weight: bold;
+    transition: all 3s;
+
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.btn-pink{
+    background-color: blueviolet;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    border: solid 3px transparent;
+    font-size: 18px;
+     
+}
+.btn-pink::before{
+    content: "";
+    position: absolute;
+    background-color: azure;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+
+}
+.btn-pink:hover::before{
+    transform: scaleX(1);
+
+}
+.btn-pink:hover{
+    border: solid;
+    color: black;
+}
+.logo-image{
+    display: flex;
+    height: 2cm;
+    width:3cm;
+    gap: 0.5cm;
+    padding: 2px;
+
+}
